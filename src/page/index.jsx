@@ -1,13 +1,10 @@
 import { Container } from './styles'
+import { Header } from '../components/Header'
 
 export function Page(){
     return(
         <Container>
-            <header>
-                <div className="header-promocao">
-                    <p>TODOS OS PRODUTOS COM 30% OFF</p>
-                </div>
-            </header>
+            <Header/>
         </Container>
     )
 }

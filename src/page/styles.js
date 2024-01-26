@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    .header-promocao {
-        
-    }
+    height: 100dvh;
+    width: 100%;
 `
