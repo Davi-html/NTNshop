@@ -7,7 +7,6 @@ import { CiUser } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 
-
 export function Header(){
     return (
         <Container>
@@ -36,7 +35,20 @@ export function Header(){
                 <hr/>
                 <nav>
                     <a href="">Inicio</a>
-                    <a href="">Produtos<IoIosArrowDown /></a>
+                    <div id='produto'>
+                        <a href="">Produtos<IoIosArrowDown /></a>
+                        <div className="hover-produto">
+                            <div className='a-hover-produto'>
+                                <a href="">Celulares</a>
+                                <a href="">Cosméticos</a>
+                                <a href="">Eletrônicos</a>
+                                <a href="">Mobília</a>
+                                <a href="">Relógios</a>
+                                <a href="">Decoração</a>
+                                <a href="">Acessórios</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="">Contato</a>
                 </nav>
             </div>

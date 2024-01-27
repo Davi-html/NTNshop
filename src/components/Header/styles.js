@@ -48,20 +48,55 @@ export const Container = styled.header`
         nav {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 16px;
 
             height: 100%;
+
+            a, div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
         }
 
         a{
             color: white;
             text-decoration: none;
         }
-
+        
         hr{
             border-top: 1px solid rgba(255, 255, 255, 0.20);
         }
     }
 
+    #produto:hover{
+        .hover-produto, .hover-produto:hover{
+            display: block;
+        }
+    }
+
+    #produto .hover-produto{
+        position: absolute;
+        display: none;
+
+        color: white;
+        background-color: black;
+        
+        top: 168px;
+        left: 0;
+        z-index: 100;
+        
+        width: 100%;
+        height: 60px;  
+        
+        .a-hover-produto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+
+            height: 100%;
+        }
+    }
+    
 `
