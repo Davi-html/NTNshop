@@ -10,7 +10,7 @@ export function Page() {
       <Slider />
       <div className="informative-banners">
         <div className="frete">
-          <img src="../assets/shipping-circle.svg" alt="" />
+          <img src="src/assets/shipping-circle.svg" alt="" />
           <div className="desc-info">
             <h3>Frete Gratís</h3>
             <p>Frete gratuito para todo Brasil!</p>
