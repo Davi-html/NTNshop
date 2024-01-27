@@ -4,6 +4,9 @@ import { Slider } from "../components/Slider";
 import { Destaque } from "../components/Destaque";
 
 import shipping from '../assets/shipping-circle.svg'
+import promotion from '../assets/promotions-circle.svg'
+import whatsapp from '../assets/whatsapp-circle.svg'
+import security from '../assets/security-circle.svg'
 
 export function Page() {
   return (
@@ -12,14 +15,14 @@ export function Page() {
       <Slider />
       <div className="informative-banners">
         <div className="frete">
-          <img src={shipping} alt="" />
+          <img src={shipping}/>
           <div className="desc-info">
             <h3>Frete Gratís</h3>
             <p>Frete gratuito para todo Brasil!</p>
           </div>
         </div>
         <div className="preco">
-          <img src="../assets/promotions-circle.svg" alt="" />
+          <img src={promotion}/>
           <div className="desc-info">
             <h3>Melhores preços</h3>
             <p>
@@ -29,14 +32,14 @@ export function Page() {
           </div>
         </div>
         <div className="suporte">
-          <img src="../assets/whatsapp-circle.svg" alt="" />
+          <img src={whatsapp}/>
           <div className="desc-info">
             <h3>Precisa de suporte?</h3>
             <p>Obtenha um suporte rápido e eficaz, contate-nos no WhatsApp!</p>
           </div>
         </div>
         <div className="seguranca">
-          <img src="../assets/security-circle.svg" alt="" />
+          <img src={security}/>
           <div className="desc-info">
             <h3>Segurança em primeiro lugar</h3>
             <p>
