@@ -1,5 +1,7 @@
 import { Container } from "./styles";
 
+import phoneOfertaDoDia from 'src/assets/phone.png'
+
 export function Destaque(){
     return(
         <Container>
@@ -9,7 +11,7 @@ export function Destaque(){
                     <h3>Ofertas do dia</h3>
                     <div className="content">
                         <div className="content-img">
-                            <img src="src/assets/phone.png" alt="" />    
+                            <img src={phoneOfertaDoDia} alt="" />    
                         </div>
                         <div className="content-info">
                             <div className="div-info-name">
