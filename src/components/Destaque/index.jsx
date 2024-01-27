@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-import phoneOfertaDoDia from 'src/assets/phone.png'
+import phoneOfertaDoDia from '../../assets/phone.png'
 
 export function Destaque(){
     return(
