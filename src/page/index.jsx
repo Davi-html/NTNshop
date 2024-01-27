@@ -1,6 +1,7 @@
 import { Container } from "./styles";
 import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
+import { Destaque } from "../components/Destaque";
 
 export function Page() {
   return (
@@ -42,6 +43,7 @@ export function Page() {
           </div>
         </div>
       </div>
+      <Destaque/>
     </Container>
   );
 }
