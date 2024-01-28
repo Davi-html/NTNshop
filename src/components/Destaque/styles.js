@@ -22,7 +22,7 @@ export const Container = styled.div`
         justify-content: center;
         gap: 20px;
         
-        height: 400px;
+        height: auto;
         width: 90%;
     }
 
@@ -39,6 +39,14 @@ export const Container = styled.div`
         border-radius: 16px;
 
         padding: 16px;
+    }
+    .oferta-do-dia2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+
+        overflow-x: auto;        
     }
 
     .content {
@@ -74,4 +82,5 @@ export const Container = styled.div`
         flex-direction: column;
         gap: 5px;
     }
+
 `

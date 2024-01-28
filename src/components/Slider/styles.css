@@ -14,33 +14,33 @@ body {
   font-size: 50px;
   color: #fff;
   font-weight: 500;
-  height: 410px;
+  height: 450px;
   max-height: 100vh;
 }
 
 .number-slide1 {
-    background-image: url(/src//assets/slider1.webp);
+    background-image: url(../../assets/img-slider/slider1.webp);
     background-size: cover;
 }
 
 .number-slide2 {
-    background-image: url(/src//assets/slider2.webp);
+    background-image: url(../../assets/img-slider/slider2.webp);
     background-size: cover;
     
 }
 
 .number-slide3 {
-    background-image: url(/src//assets/slider3.webp);
+    background-image: url(../../assets/img-slider/slider3.webp);
     background-size: cover;
 }
 
 .number-slide4 {
-    background-image: url(/src//assets/slider4.webp);
+    background-image: url(../../assets/img-slider/slider4.webp);
     background-size: cover;
 }
 
 .number-slide5 {
-    background-image: url(/src//assets/slider5.webp);
+    background-image: url(../../assets/img-slider/slider5.webp);
     background-size: cover;
 }
 

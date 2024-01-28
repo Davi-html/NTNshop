@@ -3,10 +3,10 @@ import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
 import { Destaque } from "../components/Destaque";
 
-import shipping from '../assets/shipping-circle.svg'
-import promotion from '../assets/promotions-circle.svg'
-import whatsapp from '../assets/whatsapp-circle.svg'
-import security from '../assets/security-circle.svg'
+import shipping from '../assets/img-informative-banners/shipping-circle.svg'
+import promotion from '../assets/img-informative-banners/promotions-circle.svg'
+import whatsapp from '../assets/img-informative-banners/whatsapp-circle.svg'
+import security from '../assets/img-informative-banners/security-circle.svg'
 
 export function Page() {
   return (

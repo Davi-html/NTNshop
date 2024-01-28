@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="slide"],
+[class*=" slide"] {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: auto;
+  width: auto;
+  max-height: 100vh;
+
+  .info-name {
+    font-size: 13px;
+  }
+
+  .preco-off {
+    font-size: 12px;
+  }
+
+  .content-info .div-preco .preco {
+    font-size: 24px;
+  }
+
+  .content-info .div-preco .porcentagem-preco {
+    font-size: 13px;
+  }
+  .content-info .div-juros .juros {
+    font-size: 14px;
+  }
+}
