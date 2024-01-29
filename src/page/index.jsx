@@ -7,6 +7,9 @@ import shipping from '../assets/img-informative-banners/shipping-circle.svg'
 import promotion from '../assets/img-informative-banners/promotions-circle.svg'
 import whatsapp from '../assets/img-informative-banners/whatsapp-circle.svg'
 import security from '../assets/img-informative-banners/security-circle.svg'
+import banner from '../assets/img-slider/slider3.webp'
+
+import { IoIosArrowForward } from "react-icons/io";
 
 export function Page() {
   return (
@@ -49,6 +52,16 @@ export function Page() {
         </div>
       </div>
       <Destaque/>
+      <div className="banner">
+        <img src={banner} className="img-banner"/>
+      
+        <div className="content-banner">
+          <p>IMPERDIVEL</p>
+          <h1>LIQUIDAÇÃO COM ATÉ 30% OFF</h1>
+
+          <a href="">Aproveite <IoIosArrowForward/></a>
+        </div>
+      </div>
     </Container>
   );
 }
