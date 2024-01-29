@@ -54,4 +54,12 @@ export const Container = styled.div`
         height: auto;
         width: 706px;
     }
+
+    .div-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        gap: 40px;
+    }
 `

@@ -8,8 +8,11 @@ import promotion from '../assets/img-informative-banners/promotions-circle.svg'
 import whatsapp from '../assets/img-informative-banners/whatsapp-circle.svg'
 import security from '../assets/img-informative-banners/security-circle.svg'
 import banner from '../assets/img-slider/slider3.webp'
+import ps5 from '../assets/img-cards/ps5.png'
+
 
 import { IoIosArrowForward } from "react-icons/io";
+import { Cards } from "../components/Cards";
 
 export function Page() {
   return (
@@ -61,6 +64,12 @@ export function Page() {
 
           <a href="">Aproveite <IoIosArrowForward/></a>
         </div>
+      </div>
+      <div className="div-cards">
+        <Cards img={ps5}/>  
+        <Cards img={ps5}/>  
+        <Cards img={ps5}/>  
+        <Cards img={ps5}/>  
       </div>
     </Container>
   );
