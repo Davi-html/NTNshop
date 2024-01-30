@@ -97,6 +97,47 @@ export const Container = styled.header`
 
             height: 100%;
         }
+    } 
+
+    .menu, .menuX {
+        display: none;
     }
+
+    @media(max-width: 1099px) {
+        .icons-header {
+            display: none;
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            
+            padding-top: 100px;
+            z-index: 100;
+            background-color: #3e3a39e0;
+            height: 100dvh;
+            width: 300px;
+            flex-direction: column;
+        }
+        .menu {
+            display: flex;
+            font-size: 50px;
+            margin-right: 10px;
+            color: white;
+        }
+        .menuX{
+            color: white;
+            font-size: 60px;
+        }
+    }
+
+    .open {
+        display: flex;
+    }
+
+    .close{
+        display: none;
+    }
+
+    
     
 `

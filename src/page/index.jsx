@@ -15,6 +15,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Cards } from "../components/Cards";
 
 export function Page() {
+
   return (
     <Container>
       <Header />

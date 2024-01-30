@@ -5,16 +5,37 @@ import { Input } from '../Input'
 
 import { CiUser } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoMdMenu, IoIosClose } from "react-icons/io";
 
 export function Header(){
+
+    const open = () => {
+        const nav = document.querySelector(".icons-header");
+        const menu = document.querySelector(".menu");
+        const menuX = document.querySelector(".menuX")
+        
+        nav.classList.add('open')
+        menu.classList.add('close')
+        menuX.classList.add('open')
+    }
+    const close = () => {
+        const nav = document.querySelector(".icons-header");
+        const menu = document.querySelector(".menu");
+        const menuX = document.querySelector(".menuX")
+        
+        nav.classList.remove('open')
+        menu.classList.remove('close')
+        menuX.classList.remove('open')
+    }
+    
+
     return (
         <Container>
             <div className="header-promocao">
                 <p>TODOS OS PRODUTOS COM 30% OFF</p>
             </div>
             <div className='header'>
-                <img src={logo} alt="" />
+                <img src={logo}/>
                 
                 <div className="div-input">
                     <Input placeholder={'O que você está buscando?'}/>  
@@ -30,6 +51,12 @@ export function Header(){
                         <p>Meu carrinho</p>
                     </div>
                 </div>
+                    <div className='menu'>
+                        <IoMdMenu onClick={open}/>
+                    </div>
+                    <div className='menuX'>
+                        <IoIosClose onClick={close}/>
+                    </div>
             </div>
             <div className='div-nav-header'>
                 <hr/>

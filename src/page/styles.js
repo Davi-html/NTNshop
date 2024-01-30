@@ -57,9 +57,27 @@ export const Container = styled.div`
 
     .div-cards{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
 
         gap: 40px;
     }
+
+    @media(max-width:1183px){
+        .banner {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .content-banner {
+            width: fit-content;
+        }
+    }
+
+    @media( min-width:1183px){
+        .div-cards{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
 `
