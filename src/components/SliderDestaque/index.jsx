@@ -15,6 +15,10 @@ export function SliderDestaque() {
       "(min-width: 1000px)": {
         slides: { perView: 3, spacing: 10 },
       },
+    
+      "(max-width: 614px)": {
+        slides: {perView: 1}
+      }
     },
     slides: { perView: 1, spacing: 10 },
   });

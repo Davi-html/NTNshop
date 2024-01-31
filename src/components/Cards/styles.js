@@ -7,6 +7,19 @@ export const Container = styled.div`
     .div-pai {
         background-color: white;
         display: flex;
+
+
+        @media(max-width: 548px){
+            flex-direction: column-reverse;
+            gap: 10px;
+
+            .img img{
+                width: 100%;
+            }
+            .content-card {
+                padding-bottom: 30px;
+            }
+        }
     }
 
     .content-card{
@@ -17,7 +30,7 @@ export const Container = styled.div`
         gap: 10px;
 
         padding-left: 32px;
-        width: 300px;
+        max-width: 300px;
 
         a {
             display: flex;

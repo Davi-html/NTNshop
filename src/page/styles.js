@@ -5,23 +5,28 @@ export const Container = styled.div`
     width: 100%;
 
     .informative-banners {
-        height: 209px;
+        height: auto;
         background-color: #D0D0D0;
 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         
         gap: 15px;
         padding: 20px;
 
         font-family: 'Open Sans', sans-serif;
+
+        @media(min-width: 734px){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 
     .banner {
         padding: 70px;
         display: flex;
-        
+        justify-content: center;
+
         .content-banner{
             display: flex;
             flex-direction: column;
@@ -57,7 +62,6 @@ export const Container = styled.div`
 
     .div-cards{
         display: grid;
-
         gap: 40px;
     }
 
@@ -67,16 +71,45 @@ export const Container = styled.div`
             align-items: center;
             gap: 16px;
         }
-
-        .content-banner {
-            width: fit-content;
-        }
     }
 
     @media( min-width:1183px){
         .div-cards{
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    @media(max-width: 972px){
+
+        .img-banner {
+            width: 100%;
+        }
+
+        .header {
+            input {
+                width: 300px;
+            }
+        }
+    }
+    
+    @media(max-width: 404px){
+        .header{
+            input {
+                width: 200px;
+            }
+        }
+    }
+
+    @media (max-width: 568px){
+        .banner {
+            padding: 30px 15px;
+
+            .content-banner {
+                padding: 15px;
+                font-size: 10px;
+                width: 100%;
+            }
         }
     }
 

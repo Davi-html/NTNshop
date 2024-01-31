@@ -26,11 +26,18 @@ body {
   .content-info .div-preco .preco {
     font-size: 24px;
   }
-
+  
+  @media (max-width: 1428px){
+    .content-info .div-preco .preco{
+      font-size: 16px;
+    }
+  }
+  
   .content-info .div-preco .porcentagem-preco {
     font-size: 13px;
   }
   .content-info .div-juros .juros {
     font-size: 14px;
   }
+  
 }

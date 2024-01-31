@@ -21,6 +21,17 @@ export const Container = styled.header`
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        @media (max-width: 612px){
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .filho-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     .icons-header{
@@ -101,6 +112,7 @@ export const Container = styled.header`
 
     .menu, .menuX {
         display: none;
+        z-index: 100;
     }
 
     @media(max-width: 1099px) {

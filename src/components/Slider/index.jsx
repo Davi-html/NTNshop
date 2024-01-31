@@ -29,12 +29,20 @@ export function Slider(){
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1">
-            
+            <img src={slider1}/>
           </div>
-          <div className="keen-slider__slide number-slide2"></div>
-          <div className="keen-slider__slide number-slide3"></div>
-          <div className="keen-slider__slide number-slide4"></div>
-          <div className="keen-slider__slide number-slide5"></div>
+          <div className="keen-slider__slide number-slide2">
+            <img src={slider2}/>
+          </div>
+          <div className="keen-slider__slide number-slide3">
+            <img src={slider3}/>
+          </div>
+          <div className="keen-slider__slide number-slide4">
+            <img src={slider4}/>
+          </div>
+          <div className="keen-slider__slide number-slide5">
+            <img src={slider5}/>
+          </div>
         </div>
         {loaded && instanceRef.current && (
           <>

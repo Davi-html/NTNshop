@@ -24,6 +24,24 @@ export const Container = styled.div`
         
         height: auto;
         width: 90%;
+
+        @media (max-width: 1273px){
+            grid-template-columns:  1fr;
+            justify-content: center;
+            align-items: center;
+
+            .oferta-do-dia1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3{
+                    width: 100%;
+                    text-align: start;
+                }
+            }
+        }
     }
 
     .content-img{
@@ -39,7 +57,10 @@ export const Container = styled.div`
         border-radius: 16px;
 
         padding: 16px;
+
     }
+
+
     .oferta-do-dia2{
         display: flex;
         flex-direction: column;
@@ -65,7 +86,7 @@ export const Container = styled.div`
         gap: 8px;
         
         .preco{
-            font-size: 32px;
+            font-size: 16px;
         }
         .porcentagem-preco{
             color: #00A650;
@@ -81,6 +102,10 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        .juros {
+            font-size: 14px;
+        }
     }
 
 `

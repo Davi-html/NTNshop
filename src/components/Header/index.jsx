@@ -35,28 +35,29 @@ export function Header(){
                 <p>TODOS OS PRODUTOS COM 30% OFF</p>
             </div>
             <div className='header'>
-                <img src={logo}/>
-                
-                <div className="div-input">
-                    <Input placeholder={'O que você está buscando?'}/>  
-                </div>
+                <img src={logo}/>    
+                <div className='filho-header'>
+                    <div className="div-input">
+                        <Input placeholder={'O que você está buscando?'}/>  
+                    </div>
 
-                <div className="icons-header">
-                    <div className="user">
-                        <CiUser/>
-                        <p>Minha conta</p>
+                    <div className="icons-header">
+                        <div className="user">
+                            <CiUser/>
+                            <p>Minha conta</p>
+                        </div>
+                        <div className="carrinho">
+                            <MdOutlineShoppingCart />
+                            <p>Meu carrinho</p>
+                        </div>
                     </div>
-                    <div className="carrinho">
-                        <MdOutlineShoppingCart />
-                        <p>Meu carrinho</p>
-                    </div>
-                </div>
                     <div className='menu'>
                         <IoMdMenu onClick={open}/>
                     </div>
                     <div className='menuX'>
                         <IoIosClose onClick={close}/>
                     </div>
+                </div>
             </div>
             <div className='div-nav-header'>
                 <hr/>
