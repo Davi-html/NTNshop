@@ -108,4 +108,12 @@ export const Container = styled.div`
         }
     }
 
+    .arrow {
+        fill: black;
+    }
+
+    .arrow--disabled {
+        fill: #fff;
+    }
+
 `
