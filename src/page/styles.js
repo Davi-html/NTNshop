@@ -17,8 +17,19 @@ export const Container = styled.div`
 
         font-family: 'Open Sans', sans-serif;
 
+        img {
+            width: 50px;
+        }
+
+        font-size: 12px;
+
         @media(min-width: 734px){
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 16px;
+
+            img{
+                width: 70px;
+            }
         }
     }
 
