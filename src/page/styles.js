@@ -124,4 +124,61 @@ export const Container = styled.div`
         }
     }
 
+    .div-categoria {
+        width: 100%;
+        margin-top: 50px;
+
+        #titulo-categoria {
+            color: #008ECC;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .categoria-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: space-around;
+    
+        @media (max-width: 1325px){
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width: 903px){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        @media (max-width: 632px){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .categoria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+        p {
+            color: #222222;
+            font-weight: bold;
+            font-family: 'Cantarell', sans-serif;
+            text-align: center;
+        }
+        
+        gap: 16px;
+        
+        img {
+            background-color: white;
+            border-radius: 50%;
+            height: 132px;
+            width: 132px;
+        }
+    }
+
 `
