@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+    background-color: black;
+
     .header-promocao{
         background-color: #DF1507;
         color: white;
@@ -21,22 +23,13 @@ export const Container = styled.header`
         display: flex;
         align-items: center;
         justify-content: space-around;
-
-        @media (max-width: 612px){
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .filho-header {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-        }
     }
 
     .icons-header{
         display: flex;
         gap: 55px;
+
+        margin: 0 44px;
     }
 
     .user, .carrinho{
@@ -60,7 +53,6 @@ export const Container = styled.header`
             display: flex;
             justify-content: center;
             gap: 16px;
-
             height: 100%;
 
             a, div{
@@ -110,13 +102,13 @@ export const Container = styled.header`
         }
     } 
 
-    .menu, .menuX {
+    .menu, .menuX, .menu-nav {
         display: none;
         z-index: 100;
     }
 
     @media(max-width: 1099px) {
-        .icons-header {
+        .menu-nav {
             display: none;
             position: absolute;
             
@@ -133,12 +125,15 @@ export const Container = styled.header`
         .menu {
             display: flex;
             font-size: 50px;
-            margin-right: 10px;
+            margin-left: 20px;
             color: white;
         }
         .menuX{
             color: white;
             font-size: 60px;
+        }
+        .user {
+            display:none
         }
     }
 
@@ -150,6 +145,46 @@ export const Container = styled.header`
         display: none;
     }
 
-    
-    
+    .div-input {
+        flex: 1;
+
+        input{
+            width: 100%;
+        }
+    }
+
+    .div-input2 {
+        flex: 1;
+        display: none;
+        background-color: black;
+        justify-content: center;
+
+        input{
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 659px){
+        .div-input2 {
+            display: flex;
+        }        
+        
+        .div-input {
+            display: none;
+        }
+
+        .div-nav-header{
+            margin-top: 10px;
+        }
+
+        .header {
+            justify-content: space-between;
+
+            .icons-header {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+
 `

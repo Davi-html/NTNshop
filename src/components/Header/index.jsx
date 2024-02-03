@@ -10,7 +10,7 @@ import { IoIosArrowDown, IoMdMenu, IoIosClose } from "react-icons/io";
 export function Header(){
 
     const open = () => {
-        const nav = document.querySelector(".icons-header");
+        const nav = document.querySelector(".menu-nav");
         const menu = document.querySelector(".menu");
         const menuX = document.querySelector(".menuX")
         
@@ -19,7 +19,7 @@ export function Header(){
         menuX.classList.add('open')
     }
     const close = () => {
-        const nav = document.querySelector(".icons-header");
+        const nav = document.querySelector(".menu-nav");
         const menu = document.querySelector(".menu");
         const menuX = document.querySelector(".menuX")
         
@@ -35,12 +35,17 @@ export function Header(){
                 <p>TODOS OS PRODUTOS COM 30% OFF</p>
             </div>
             <div className='header'>
+                <div className='menu'>
+                    <IoMdMenu onClick={open}/>
+                </div>
+                <div className='menuX'>
+                    <IoIosClose onClick={close}/>
+                </div>
                 <img src={logo}/>    
-                <div className='filho-header'>
+                
                     <div className="div-input">
                         <Input placeholder={'O que você está buscando?'}/>  
                     </div>
-
                     <div className="icons-header">
                         <div className="user">
                             <CiUser/>
@@ -51,14 +56,14 @@ export function Header(){
                             <p>Meu carrinho</p>
                         </div>
                     </div>
-                    <div className='menu'>
-                        <IoMdMenu onClick={open}/>
+                    <div className="menu-nav">
+                        wefwefwef
                     </div>
-                    <div className='menuX'>
-                        <IoIosClose onClick={close}/>
-                    </div>
-                </div>
+                
             </div>
+                <div className="div-input2">
+                        <Input placeholder={'O que você está buscando?'}/>  
+                </div>
             <div className='div-nav-header'>
                 <hr/>
                 <nav>

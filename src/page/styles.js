@@ -96,20 +96,6 @@ export const Container = styled.div`
         .img-banner {
             width: 100%;
         }
-
-        .header {
-            input {
-                width: 300px;
-            }
-        }
-    }
-    
-    @media(max-width: 404px){
-        .header{
-            input {
-                width: 200px;
-            }
-        }
     }
 
     @media (max-width: 568px){
