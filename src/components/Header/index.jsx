@@ -38,9 +38,6 @@ export function Header(){
                 <div className='menu'>
                     <IoMdMenu onClick={open}/>
                 </div>
-                <div className='menuX'>
-                    <IoIosClose onClick={close}/>
-                </div>
                 <img src={logo}/>    
                 
                     <div className="div-input">
@@ -57,7 +54,18 @@ export function Header(){
                         </div>
                     </div>
                     <div className="menu-nav">
-                        wefwefwef
+                        <div className='menuX'>
+                            <IoIosClose onClick={close}/>
+                        </div>
+                        <a href="">Início</a>
+                        <a href="">Produtos</a>
+                        <a href="">Contatos</a>
+
+                        <div className="login-menu">
+                            <CiUser className='user-login-menu'/>
+                            <a href=''>Crie uma conta</a>
+                            <a href=''>Iniciar sessão</a>
+                        </div>
                     </div>
                 
             </div>

@@ -42,9 +42,19 @@ export const Container = styled.header`
         svg {
             font-size: 33px;
         }
-        
+       
     }
+    @media (max-width: 392px){
+        .carrinho{
+            font-size: 10px;
+        }
 
+        .header {
+            img {
+                width: 170px;
+            }
+        }
+    }
     .div-nav-header{
         background: black;
         height: 51px;
@@ -106,7 +116,47 @@ export const Container = styled.header`
         display: none;
         z-index: 100;
     }
+    
+    .menu-nav {
+        animation: menuAnimation .500s alternate;
 
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+
+            border-top: gray 1px solid;
+        }
+
+        .login-menu {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 0.3fr 1fr 1fr;
+            color: white;
+            margin-top: auto;
+            padding: 10px;
+            gap: 20px;
+            background-color: #141414;
+            .user-login-menu{
+                font-size: 40px;
+            }
+
+            a {
+                padding: 0;
+                border: none;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @keyframes menuAnimation {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
     @media(max-width: 1099px) {
         .menu-nav {
             display: none;
@@ -115,9 +165,9 @@ export const Container = styled.header`
             top: 0;
             left: 0;
             
-            padding-top: 100px;
+            padding-top: 55px;
             z-index: 100;
-            background-color: #3e3a39e0;
+            background-color: black;
             height: 100dvh;
             width: 300px;
             flex-direction: column;
@@ -131,9 +181,18 @@ export const Container = styled.header`
         .menuX{
             color: white;
             font-size: 60px;
+            z-index: 1001;
+            position: absolute;
+            right: 0;
+            top: 0;
         }
         .user {
             display:none
+        }
+
+        .div-nav-header {
+            display: none;
+            
         }
     }
 
@@ -186,5 +245,6 @@ export const Container = styled.header`
             }
         }
     }
+
 
 `

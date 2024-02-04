@@ -127,19 +127,16 @@ export const Container = styled.div`
 
     .categoria-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: space-around;
-    
-        @media (max-width: 1325px){
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        }
-        @media (max-width: 903px){
+        
+        @media (min-width: 646px) {
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
         }
-        @media (max-width: 632px){
-            grid-template-columns: 1fr 1fr;
+
+        @media (min-width: 833px){
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         }
     }
 
