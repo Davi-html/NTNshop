@@ -6,10 +6,11 @@ import { Input } from '../Input'
 import { CiUser } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosArrowDown, IoMdMenu, IoIosClose } from "react-icons/io";
+import { useState } from 'react';
 
 export function Header(){
 
-    const open = () => {
+    const openMenu = () => {
         const nav = document.querySelector(".menu-nav");
         const menu = document.querySelector(".menu");
         const menuX = document.querySelector(".menuX")
@@ -18,7 +19,7 @@ export function Header(){
         menu.classList.add('close')
         menuX.classList.add('open')
     }
-    const close = () => {
+    const closeMenu = () => {
         const nav = document.querySelector(".menu-nav");
         const menu = document.querySelector(".menu");
         const menuX = document.querySelector(".menuX")
@@ -27,7 +28,6 @@ export function Header(){
         menu.classList.remove('close')
         menuX.classList.remove('open')
     }
-    
 
     return (
         <Container>
@@ -36,7 +36,7 @@ export function Header(){
             </div>
             <div className='header'>
                 <div className='menu'>
-                    <IoMdMenu onClick={open}/>
+                    <IoMdMenu onClick={openMenu}/>
                 </div>
                 <img src={logo}/>    
                 
@@ -55,10 +55,16 @@ export function Header(){
                     </div>
                     <div className="menu-nav">
                         <div className='menuX'>
-                            <IoIosClose onClick={close}/>
+                            <IoIosClose onClick={closeMenu}/>
                         </div>
                         <a href="">Início</a>
-                        <a href="">Produtos</a>
+                        <a id='produto-menu'>Produtos <IoIosArrowDown/></a>
+                        <ul className="list-produtos" style={{display: 'none'}}>
+                            <li><a href=""><strong>Ver todos os produtos</strong></a></li>
+                            <li><a href="">Saúde</a></li>
+                            <li><a href="">Eletrodomésticos</a></li>
+                            <li><a href="">Games</a></li>
+                        </ul>
                         <a href="">Contatos</a>
 
                         <div className="login-menu">

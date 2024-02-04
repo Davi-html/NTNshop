@@ -128,6 +128,11 @@ export const Container = styled.header`
             border-top: gray 1px solid;
         }
 
+        #produto-menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .login-menu {
             display: grid;
             align-items: center;
@@ -146,6 +151,19 @@ export const Container = styled.header`
                 border: none;
                 font-size: 14px;
             }
+        }
+
+        .list-produtos {
+            width: 100%;
+            background-color: rgba(255,255,255,.1);
+
+            a {
+                padding: 16px;
+                width: 100%;
+                display: block;
+            }
+
+            display: none;
         }
     }
 
@@ -217,6 +235,7 @@ export const Container = styled.header`
         display: none;
         background-color: black;
         justify-content: center;
+        padding-bottom: 15px;
 
         input{
             width: 95%;
