@@ -13,7 +13,14 @@ body {
   color: black;
   height: auto;
   width: auto;
-  max-height: 100vh;
+  max-height: 100vh;  
+  
+  .container &:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.068);
+    border-radius: 10px;
+  }
+
 
   .info-name {
     font-size: 13px;

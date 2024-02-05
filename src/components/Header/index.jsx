@@ -31,7 +31,7 @@ export function Header(){
     return (
         <Container>
             <div className="header-promocao">
-                <p>TODOS OS PRODUTOS COM 30% OFF</p>
+                <p>Frete gratis para todo o Brasil</p>
             </div>
             <div className='header'>
                 <div className='menu'>
