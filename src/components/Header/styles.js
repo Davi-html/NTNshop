@@ -49,11 +49,6 @@ export const Container = styled.header`
             font-size: 10px;
         }
 
-        .header {
-            img {
-                width: 170px;
-            }
-        }
     }
     .div-nav-header{
         background: black;
@@ -265,5 +260,8 @@ export const Container = styled.header`
         }
     }
 
+    img {
+        margin: 0 10px ;
+    }
 
 `

@@ -1,12 +1,11 @@
 import { Container } from './styles'
-import logo from '../../assets/NTN-logo.webp'
+import logo from '../../assets/logo.png'
 
 import { Input } from '../Input'
 
 import { CiUser } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosArrowDown, IoMdMenu, IoIosClose } from "react-icons/io";
-import { useState } from 'react';
 
 export function Header(){
 
