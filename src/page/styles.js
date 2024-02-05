@@ -4,35 +4,6 @@ export const Container = styled.div`
     height: 100dvh;
     width: 100%;
 
-    .informative-banners {
-        height: auto;
-        background-color: #D0D0D0;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
-        gap: 15px;
-        padding: 20px;
-
-        font-family: 'Open Sans', sans-serif;
-
-        img {
-            width: 50px;
-        }
-
-        font-size: 12px;
-
-        @media(min-width: 734px){
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            font-size: 16px;
-
-            img{
-                width: 70px;
-            }
-        }
-    }
-
     .banner {
         padding: 70px;
         display: flex;
@@ -145,7 +116,6 @@ export const Container = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
         
         p {
             color: #222222;
@@ -161,6 +131,120 @@ export const Container = styled.div`
             border-radius: 50%;
             height: 132px;
             width: 132px;
+        }
+    }
+
+    .oferta {
+        background-color: black;
+        width: 100%;
+        height: 390px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+        margin: 70px 0;
+
+        #nome-loja {
+            font-family: 'Open sans', sans-serif;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-family: 'Open sans', sans-serif;
+        }
+
+        
+        .div-input2 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+            input {
+                width: 50%;
+            }
+        }
+    }
+
+    .sobre-nos {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: rgba(0,0,0,.1);
+        padding: 40px;
+        gap: 25px;
+
+        @media (min-width: 626px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .sobre-nos-info {
+
+            h2 {
+                margin-bottom: 26px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .link-sobre-nos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                flex: 1;
+                text-decoration: none;
+                color: #222222;
+            }
+        }
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+            margin-top: 30px;
+        }
+
+        .social-link{
+            svg {
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            a {
+                
+                color: white;
+            }
+
+            display: flex;
+            gap: 30px;
+        }
+
+        img {
+            width: 100px;
+            height: 50px;
+        }
+
+        .copy {
+            p{
+                font-size: 12px;
+            }
+
+            padding-bottom: 10px;
         }
     }
 
