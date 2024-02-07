@@ -9,20 +9,12 @@ import ps5 from '../assets/img-cards/ps5.png'
 
 import logo from '../assets/logo.png'
 
-// img Categorias
-
-import eletrodomesticos from "../assets/img-categorias/eletrodomesticos.png";
-import games from "../assets/img-categorias/games.png";
-import livros from "../assets/img-categorias/livros.png";
-import instrumentosMusicais from "../assets/img-categorias/musicais.png";
-import relogiosEjoias from "../assets/img-categorias/relogios.png";
-import saude from "../assets/img-categorias/saude.png";
-
 import { IoIosArrowForward } from "react-icons/io";
 import { Cards } from "../components/Cards";
 import { InformativeBanners } from "../components/Informative-Banners";
 import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { Categoria } from "../components/SliderCategoria";
 
 
 export function Page() {
@@ -51,33 +43,7 @@ export function Page() {
       </div>
 
       <div className="div-categoria">
-        <h1>Compre nas <span id="titulo-categoria">principais categorias</span></h1>
-        <div className="categoria-container">
-          <div className="categoria eletronico">
-            <img src={eletrodomesticos}/>
-            <p>Eletrodomésticos</p>
-          </div>
-          <div className="categoria eletronico">
-            <img src={saude}/>
-            <p>Saúde</p>
-          </div>
-          <div className="categoria eletronico">
-            <img src={games}/>
-            <p>Games</p>
-          </div>
-          <div className="categoria eletronico">
-            <img src={livros}/>
-            <p>Livros</p>
-          </div>
-          <div className="categoria eletronico">
-            <img src={instrumentosMusicais}/>
-            <p>Instrumentos Musicais</p>
-          </div>
-          <div className="categoria eletronico">
-            <img src={relogiosEjoias}/>
-            <p>Joias e Relógios</p>
-          </div>
-        </div>
+        <Categoria/>
       </div>
 
       <div className="oferta">
