@@ -173,7 +173,7 @@ export const Container = styled.header`
     @media(max-width: 1099px) {
         .menu-nav {
             display: none;
-            position: absolute;
+            position: fixed;
             
             top: 0;
             left: 0;
