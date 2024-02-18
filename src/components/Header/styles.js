@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Container = styled.header`
     background-color: black;
 
+    a {
+        text-decoration: none;
+    }
+
     .header-promocao{
         background-color: #DF1507;
         color: white;
@@ -38,7 +42,8 @@ export const Container = styled.header`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+        cursor: pointer;
+
         svg {
             font-size: 33px;
         }

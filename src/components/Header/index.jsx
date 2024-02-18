@@ -7,6 +7,8 @@ import { CiUser } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosArrowDown, IoMdMenu, IoIosClose } from "react-icons/io";
 
+import { Link } from "react-router-dom";
+
 export function Header(){
 
     const openMenu = () => {
@@ -43,14 +45,16 @@ export function Header(){
                         <Input placeholder={'O que você está buscando?'}/>  
                     </div>
                     <div className="icons-header">
-                        <div className="user">
-                            <CiUser/>
-                            <p>Minha conta</p>
-                        </div>
-                        <div className="carrinho">
-                            <MdOutlineShoppingCart />
-                            <p>Meu carrinho</p>
-                        </div>
+                        <Link to='signin'>
+                            <div className="user">
+                                <CiUser/>
+                                <p>Minha conta</p>
+                            </div>
+                        </Link>
+                            <div className="carrinho">
+                                <MdOutlineShoppingCart />
+                                <p>Meu carrinho</p>
+                            </div>
                     </div>
                     <div className="menu-nav">
                         <div className='menuX'>
