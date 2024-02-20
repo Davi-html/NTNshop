@@ -68,7 +68,7 @@ export function Header(){
                             <li><a href="">Eletrodomésticos</a></li>
                             <li><a href="">Games</a></li>
                         </ul>
-                        <Link to="contact">Contatos</Link>
+                        <Link to="/contact">Contato</Link>
 
                         <div className="login-menu">
                             <CiUser className='user-login-menu'/>
@@ -99,7 +99,7 @@ export function Header(){
                             </div>
                         </div>
                     </div>
-                    <a href="">Contato</a>
+                    <Link to="/contact">Contato</Link>
                 </nav>
             </div>
         </Container>
