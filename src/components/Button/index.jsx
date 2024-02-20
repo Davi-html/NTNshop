@@ -2,7 +2,7 @@ import { Container } from "./styles";
 
 export function Button({text}){
     return(
-        <Container>
+        <Container className="button">
             {text}
         </Container>
     )

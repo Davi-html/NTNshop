@@ -25,7 +25,7 @@ export function Signin() {
             <input type="password" name="senha" id="senha"/>
             <p id="p-esqueceu-senha"><Link to='' className="esqueceu-senha">Esqueceu a senha?</Link></p>
             <Button text={'INICIAR SESSÃO'}/>
-            <p className="p-criar-conta">Não possui uma conta ainda? <Link to='/' className="criar-conta">Criar uma conta</Link></p>
+            <p className="p-criar-conta">Não possui uma conta ainda? <Link to='/signup' className="criar-conta">Criar uma conta</Link></p>
         </form>
         <Footer/>
     </Container>

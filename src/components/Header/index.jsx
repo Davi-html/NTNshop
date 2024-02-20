@@ -45,7 +45,7 @@ export function Header(){
                         <Input placeholder={'O que você está buscando?'}/>  
                     </div>
                     <div className="icons-header">
-                        <Link to='signin'>
+                        <Link to='/signin'>
                             <div className="user">
                                 <CiUser/>
                                 <p>Minha conta</p>
