@@ -11,6 +11,7 @@ import { ErrorPage } from './page/router/ErrorPage/index.jsx'
 
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import { Signup } from './page/router/signup/index.jsx'
+import { Contact } from './page/router/contact/index.jsx'
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "signup",
     element: <Signup/>
+  },
+  {
+    path: "contact",
+    element: <Contact/>
   },
 ]);
 

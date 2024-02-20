@@ -33,7 +33,7 @@ export function Header(){
     return (
         <Container>
             <div className="header-promocao">
-                <p>Frete gratis para todo o Brasil</p>
+                <p>📦 <strong>FRETE GRÁTIS</strong> PARA TODO O BRASIL!</p>
             </div>
             <div className='header'>
                 <div className='menu'>
@@ -60,7 +60,7 @@ export function Header(){
                         <div className='menuX'>
                             <IoIosClose onClick={closeMenu}/>
                         </div>
-                        <a href="">Início</a>
+                        <Link to='/'>Início</Link>
                         <a id='produto-menu'>Produtos <IoIosArrowDown/></a>
                         <ul className="list-produtos" style={{display: 'none'}}>
                             <li><a href=""><strong>Ver todos os produtos</strong></a></li>
@@ -68,7 +68,7 @@ export function Header(){
                             <li><a href="">Eletrodomésticos</a></li>
                             <li><a href="">Games</a></li>
                         </ul>
-                        <a href="">Contatos</a>
+                        <Link to="contact">Contatos</Link>
 
                         <div className="login-menu">
                             <CiUser className='user-login-menu'/>
@@ -84,7 +84,7 @@ export function Header(){
             <div className='div-nav-header'>
                 <hr/>
                 <nav>
-                    <a href="">Inicio</a>
+                    <Link to="/">Inicio</Link>
                     <div id='produto'>
                         <a href="">Produtos<IoIosArrowDown /></a>
                         <div className="hover-produto">
